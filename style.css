@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body {
+    background: white;
+    display: flex;
+}
+
+.logo {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+main {
+    width: 375px;
+    background-image: linear-gradient(to top, #f0c66b, white);
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+    border: #ebbc58;
+}
+
+label {
+    color: #777777;
+    font-weight: 400px;
+    font-size: 14px;
+}
+
+select,
+input {
+    background: #FFFFFF;
+    border: 1px solid #ebbc58;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button {
+    background: #ebbc58;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    height: 48px;
+    color: #070707;
+    font-weight: 700;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    border: 1px solid #e7b547;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currency {
+    color: #777777;
+    font-size: 14px;
+}
+
+.currency_value,
+.currency_value_to_convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) and (orientation: portrait) {
+    body {
+        height: 100px;
+        width: 100px;
+        flex-direction: row;
+        flex-direction: column;
+    }
+
+}
